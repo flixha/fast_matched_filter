@@ -50,8 +50,8 @@ try:
     CPU_LOADED = True
 
 except OSError:
-    print("Matched-filter CPU is not compiled! Should be here: {}".
-          format(os.path.join(path, 'matched_filter_CPU.so')))
+    # print("Matched-filter CPU is not compiled! Should be here: {}".
+    #       format(os.path.join(path, 'matched_filter_CPU.so')))
     CPU_LOADED = False
 
 try:
@@ -73,8 +73,8 @@ try:
     GPU_LOADED = True
 
 except OSError:
-    print("Matched-filter GPU is not compiled! Should be here: {}".
-          format(os.path.join(path, 'matched_filter_GPU.so')))
+    # print("Matched-filter GPU is not compiled! Should be here: {}".
+    #       format(os.path.join(path, 'matched_filter_GPU.so')))
     GPU_LOADED = False
 
 
